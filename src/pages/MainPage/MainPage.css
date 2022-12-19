@@ -1,0 +1,74 @@
+.main-page__content {
+    padding: 42px calc(50% - 500px);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main-page__main-section {
+    padding-left: 40px;
+    box-sizing: border-box;
+    width: 60%;
+}
+
+.main-page__search-box {
+    margin-bottom: 35px;
+}
+
+.main-page__favorites {
+    width: 35%;   
+}
+
+.main-page__movies {
+    min-width: 370px;
+}
+.favMobile {
+    display: none;
+}
+@media screen and (max-width: 950px) {
+    .main-page__movies {
+        width: 40vw;
+    }
+}
+@media screen and (max-width: 820px) {
+    .main-page__favorites {
+        max-width: 395px;
+        min-width: 395px;
+        margin: 0 0 0 40px;
+        margin-bottom: 40px;
+    }
+    .favMobile {
+        display: block;
+        margin: 0 0 40px 0;
+    }
+    .favDesktop {
+        display: none;
+    }
+    .main-page__movies {
+        width: 375px;
+    }
+}
+@media screen and (max-width: 625px) {
+    .main-page__favorites {
+        max-width: 395px;
+        min-width: 395px;
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 440px) {
+    .main-page__favorites {
+        max-width: 340px;
+        min-width: 95vw;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .main-page__main-section {
+        padding-left: 20px;
+        box-sizing: border-box;
+        width: 60%;
+    }
+    .main-page__movies {
+        min-width: 87vw;
+        width: 87vw;
+    }
+}
